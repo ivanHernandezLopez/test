@@ -692,3 +692,265 @@
 2016-10-09 23:03:33 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function get_all() on null ~ APPPATH/classes/Controller/Admin/Sales.php [ 41 ] in file:line
 2016-10-09 23:03:33 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2016-10-09 23:33:05 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: name ~ SYSPATH/classes/Kohana/Validation.php [ 102 ] in /var/www/html/test/system/classes/Kohana/Validation.php:102
+2016-10-09 23:33:05 --- DEBUG: #0 /var/www/html/test/system/classes/Kohana/Validation.php(102): Kohana_Core::error_handler(8, 'Undefined index...', '/var/www/html/t...', 102, Array)
+#1 /var/www/html/test/application/classes/Model/Sales.php(11): Kohana_Validation->offsetGet('name')
+#2 /var/www/html/test/application/classes/Controller/Admin/Sales.php(32): Model_Sales->add_sale(Object(Validation))
+#3 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#6 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#9 {main} in /var/www/html/test/system/classes/Kohana/Validation.php:102
+2016-10-09 23:33:15 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: name ~ SYSPATH/classes/Kohana/Validation.php [ 102 ] in /var/www/html/test/system/classes/Kohana/Validation.php:102
+2016-10-09 23:33:15 --- DEBUG: #0 /var/www/html/test/system/classes/Kohana/Validation.php(102): Kohana_Core::error_handler(8, 'Undefined index...', '/var/www/html/t...', 102, Array)
+#1 /var/www/html/test/application/classes/Model/Sales.php(11): Kohana_Validation->offsetGet('name')
+#2 /var/www/html/test/application/classes/Controller/Admin/Sales.php(32): Model_Sales->add_sale(Object(Validation))
+#3 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#6 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#9 {main} in /var/www/html/test/system/classes/Kohana/Validation.php:102
+2016-10-09 23:33:32 --- EMERGENCY: Database_Exception [ 1364 ]: Field 'total' doesn't have a default value [ INSERT INTO `sales` (`fk_client`, `date`) VALUES ('2', '2016-10-09') ] ~ MODPATH/mysqli/classes/Kohana/Database/MySQLi.php [ 192 ] in /var/www/html/test/modules/database/classes/Kohana/Database/Query.php:251
+2016-10-09 23:33:32 --- DEBUG: #0 /var/www/html/test/modules/database/classes/Kohana/Database/Query.php(251): Kohana_Database_MySQLi->query(2, 'INSERT INTO `sa...', false, Array)
+#1 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(1324): Kohana_Database_Query->execute(Object(Database_MySQLi))
+#2 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(1421): Kohana_ORM->create(NULL)
+#3 /var/www/html/test/application/classes/Model/Sales.php(14): Kohana_ORM->save()
+#4 /var/www/html/test/application/classes/Controller/Admin/Sales.php(32): Model_Sales->add_sale(Object(Validation))
+#5 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#8 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#10 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#11 {main} in /var/www/html/test/modules/database/classes/Kohana/Database/Query.php:251
+2016-10-09 23:39:00 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' ~ APPPATH/classes/Controller/Admin/Sales.php [ 9 ] in file:line
+2016-10-09 23:39:00 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:39:09 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' ~ APPPATH/classes/Controller/Admin/Sales.php [ 9 ] in file:line
+2016-10-09 23:39:09 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:39:13 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' ~ APPPATH/classes/Controller/Admin/Sales.php [ 9 ] in file:line
+2016-10-09 23:39:13 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:39:21 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected ')', expecting ';' ~ APPPATH/classes/Controller/Admin/Sales.php [ 38 ] in file:line
+2016-10-09 23:39:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:39:35 --- EMERGENCY: ErrorException [ 2048 ]: Declaration of Model_Sales::update() should be compatible with Kohana_ORM::update(Validation $validation = NULL) ~ APPPATH/classes/Model/Sales.php [ 0 ] in /var/www/html/test/system/classes/Kohana/Core.php:511
+2016-10-09 23:39:35 --- DEBUG: #0 /var/www/html/test/system/classes/Kohana/Core.php(511): Kohana_Core::error_handler(2048, 'Declaration of ...', '/var/www/html/t...', 0, Array)
+#1 /var/www/html/test/system/classes/Kohana/Core.php(511): Kohana_Core::auto_load()
+#2 [internal function]: Kohana_Core::auto_load('Model_Sales')
+#3 /var/www/html/test/application/classes/Controller/Admin/Sales.php(15): spl_autoload_call('Model_Sales')
+#4 /var/www/html/test/system/classes/Kohana/Controller.php(69): Controller_Admin_sales->before()
+#5 [internal function]: Kohana_Controller->execute()
+#6 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#7 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#10 {main} in /var/www/html/test/system/classes/Kohana/Core.php:511
+2016-10-09 23:39:56 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_Salesproduct' not found ~ APPPATH/classes/Controller/Admin/Sales.php [ 16 ] in file:line
+2016-10-09 23:39:56 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:42:23 --- EMERGENCY: Database_Exception [ 1146 ]: Table 'pruebaEnkarga.salesproduct' doesn't exist [ SHOW FULL COLUMNS FROM `salesproduct` ] ~ MODPATH/mysqli/classes/Kohana/Database/MySQLi.php [ 192 ] in /var/www/html/test/modules/mysqli/classes/Kohana/Database/MySQLi.php:357
+2016-10-09 23:42:23 --- DEBUG: #0 /var/www/html/test/modules/mysqli/classes/Kohana/Database/MySQLi.php(357): Kohana_Database_MySQLi->query(1, 'SHOW FULL COLUM...', false)
+#1 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(1668): Kohana_Database_MySQLi->list_columns('salesproduct')
+#2 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(444): Kohana_ORM->list_columns()
+#3 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(389): Kohana_ORM->reload_columns()
+#4 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(254): Kohana_ORM->_initialize()
+#5 /var/www/html/test/application/classes/Controller/Admin/Sales.php(16): Kohana_ORM->__construct()
+#6 /var/www/html/test/system/classes/Kohana/Controller.php(69): Controller_Admin_sales->before()
+#7 [internal function]: Kohana_Controller->execute()
+#8 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#9 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#11 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#12 {main} in /var/www/html/test/modules/mysqli/classes/Kohana/Database/MySQLi.php:357
+2016-10-09 23:42:43 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_Salesproduct' not found ~ APPPATH/classes/Controller/Admin/Sales.php [ 16 ] in file:line
+2016-10-09 23:42:43 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:42:55 --- EMERGENCY: ErrorException [ 1 ]: Class 'Model_Saleproduct' not found ~ APPPATH/classes/Controller/Admin/Sales.php [ 16 ] in file:line
+2016-10-09 23:42:55 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:43:08 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function add_saleproduct() on null ~ APPPATH/classes/Controller/Admin/Sales.php [ 42 ] in file:line
+2016-10-09 23:43:08 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:43:22 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function add_saleproduct() on null ~ APPPATH/classes/Controller/Admin/Sales.php [ 42 ] in file:line
+2016-10-09 23:43:22 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:43:48 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function add_saleproduct() on null ~ APPPATH/classes/Controller/Admin/Sales.php [ 42 ] in file:line
+2016-10-09 23:43:48 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:43:51 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function add_saleproduct() on null ~ APPPATH/classes/Controller/Admin/Sales.php [ 42 ] in file:line
+2016-10-09 23:43:51 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:44:05 --- EMERGENCY: Kohana_Exception [ 0 ]: The fk_sale property does not exist in the Model_Saleproduct class ~ MODPATH/orm/classes/Kohana/ORM.php [ 760 ] in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:44:05 --- DEBUG: #0 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(702): Kohana_ORM->set('fk_sale', Object(Model_Sales))
+#1 /var/www/html/test/application/classes/Model/Saleproduct.php(11): Kohana_ORM->__set('fk_sale', Object(Model_Sales))
+#2 /var/www/html/test/application/classes/Controller/Admin/Sales.php(42): Model_Saleproduct->add_saleproduct(Object(Model_Sales), '1', '2', 21)
+#3 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#6 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#9 {main} in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:44:40 --- EMERGENCY: Kohana_Exception [ 0 ]: The fk_sale property does not exist in the Model_Saleproduct class ~ MODPATH/orm/classes/Kohana/ORM.php [ 760 ] in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:44:40 --- DEBUG: #0 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(702): Kohana_ORM->set('fk_sale', Object(Model_Sales))
+#1 /var/www/html/test/application/classes/Model/Saleproduct.php(11): Kohana_ORM->__set('fk_sale', Object(Model_Sales))
+#2 /var/www/html/test/application/classes/Controller/Admin/Sales.php(42): Model_Saleproduct->add_saleproduct(Object(Model_Sales), '1', '2', 21)
+#3 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#6 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#9 {main} in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:45:34 --- EMERGENCY: Kohana_Exception [ 0 ]: The fk_sale property does not exist in the Model_Saleproduct class ~ MODPATH/orm/classes/Kohana/ORM.php [ 760 ] in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:45:34 --- DEBUG: #0 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(702): Kohana_ORM->set('fk_sale', Object(Model_Sales))
+#1 /var/www/html/test/application/classes/Model/Saleproduct.php(11): Kohana_ORM->__set('fk_sale', Object(Model_Sales))
+#2 /var/www/html/test/application/classes/Controller/Admin/Sales.php(42): Model_Saleproduct->add_saleproduct(Object(Model_Sales), '1', '2', 21)
+#3 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#6 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#9 {main} in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:45:49 --- EMERGENCY: Kohana_Exception [ 0 ]: The num property does not exist in the Model_Saleproduct class ~ MODPATH/orm/classes/Kohana/ORM.php [ 760 ] in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:45:49 --- DEBUG: #0 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(702): Kohana_ORM->set('num', '2')
+#1 /var/www/html/test/application/classes/Model/Saleproduct.php(13): Kohana_ORM->__set('num', '2')
+#2 /var/www/html/test/application/classes/Controller/Admin/Sales.php(42): Model_Saleproduct->add_saleproduct(Object(Model_Sales), '1', '2', 21)
+#3 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#6 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#9 {main} in /var/www/html/test/modules/orm/classes/Kohana/ORM.php:702
+2016-10-09 23:49:00 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: total ~ APPPATH/classes/Controller/Admin/Sales.php [ 47 ] in /var/www/html/test/application/classes/Controller/Admin/Sales.php:47
+2016-10-09 23:49:00 --- DEBUG: #0 /var/www/html/test/application/classes/Controller/Admin/Sales.php(47): Kohana_Core::error_handler(8, 'Undefined varia...', '/var/www/html/t...', 47, Array)
+#1 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#4 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#7 {main} in /var/www/html/test/application/classes/Controller/Admin/Sales.php:47
+2016-10-09 23:49:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:49:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:50:08 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:50:08 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:50:12 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:50:12 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:50:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:50:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:50:30 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:50:30 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:50:40 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'public' (T_PUBLIC) ~ APPPATH/classes/Controller/Admin/Sales.php [ 55 ] in file:line
+2016-10-09 23:50:40 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:50:41 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'public' (T_PUBLIC) ~ APPPATH/classes/Controller/Admin/Sales.php [ 55 ] in file:line
+2016-10-09 23:50:41 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:26 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:26 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:26 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:27 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:27 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:27 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:27 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:27 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:28 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:28 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:29 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 52 ] in file:line
+2016-10-09 23:51:29 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:45 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 30 ] in file:line
+2016-10-09 23:51:45 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:46 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 30 ] in file:line
+2016-10-09 23:51:46 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:46 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 30 ] in file:line
+2016-10-09 23:51:46 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:51:53 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: message ~ APPPATH/classes/Controller/Admin/Sales.php [ 32 ] in /var/www/html/test/application/classes/Controller/Admin/Sales.php:32
+2016-10-09 23:51:53 --- DEBUG: #0 /var/www/html/test/application/classes/Controller/Admin/Sales.php(32): Kohana_Core::error_handler(8, 'Undefined varia...', '/var/www/html/t...', 32, Array)
+#1 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#4 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#7 {main} in /var/www/html/test/application/classes/Controller/Admin/Sales.php:32
+2016-10-09 23:51:54 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: message ~ APPPATH/classes/Controller/Admin/Sales.php [ 32 ] in /var/www/html/test/application/classes/Controller/Admin/Sales.php:32
+2016-10-09 23:51:54 --- DEBUG: #0 /var/www/html/test/application/classes/Controller/Admin/Sales.php(32): Kohana_Core::error_handler(8, 'Undefined varia...', '/var/www/html/t...', 32, Array)
+#1 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_sales->action_add()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_sales))
+#4 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#7 {main} in /var/www/html/test/application/classes/Controller/Admin/Sales.php:32
+2016-10-09 23:52:27 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) ~ APPPATH/classes/Controller/Admin/Sales.php [ 50 ] in file:line
+2016-10-09 23:52:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2016-10-09 23:57:22 --- EMERGENCY: Database_Exception [ 1054 ]: Unknown column 'id_sale' in 'where clause' [ SELECT `sales`.`id_sales` AS `id_sales`, `sales`.`fk_client` AS `fk_client`, `sales`.`total` AS `total`, `sales`.`date` AS `date` FROM `sales` AS `sales` WHERE `id_sale` = '1' LIMIT 1 ] ~ MODPATH/mysqli/classes/Kohana/Database/MySQLi.php [ 192 ] in /var/www/html/test/modules/database/classes/Kohana/Database/Query.php:251
+2016-10-09 23:57:22 --- DEBUG: #0 /var/www/html/test/modules/database/classes/Kohana/Database/Query.php(251): Kohana_Database_MySQLi->query(1, 'SELECT `sales`....', false, Array)
+#1 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(1072): Kohana_Database_Query->execute(Object(Database_MySQLi))
+#2 /var/www/html/test/modules/orm/classes/Kohana/ORM.php(979): Kohana_ORM->_load_result(false)
+#3 /var/www/html/test/application/classes/Model/Sales.php(20): Kohana_ORM->find()
+#4 /var/www/html/test/application/classes/Controller/Admin/Sales.php(48): Model_Sales->update_register(Object(Model_Sales), 10.5)
+#5 /var/www/html/test/system/classes/Kohana/Controller.php(84): Controller_Admin_Sales->action_add()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /var/www/html/test/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Sales))
+#8 /var/www/html/test/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /var/www/html/test/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#10 /var/www/html/test/index.php(118): Kohana_Request->execute()
+#11 {main} in /var/www/html/test/modules/database/classes/Kohana/Database/Query.php:251

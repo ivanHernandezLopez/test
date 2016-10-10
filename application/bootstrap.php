@@ -107,7 +107,7 @@ Kohana::$environment = ($_SERVER['SERVER_NAME'] == "localhost")
 						: Kohana::PRODUCTION;
 Kohana::init(array(
 			'base_url' => (Kohana::$environment==Kohana::DEVELOPMENT)
-							? 'http://localhost/pruebaEnkarga/'
+							? 'http://localhost/test/'
 							: '',
 ));
 

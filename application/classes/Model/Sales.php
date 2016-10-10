@@ -4,16 +4,22 @@ class Model_Sales extends ORM {
 
 	protected $_primary_key = "id_sales";
 
-	public function add_user($post,$a1,$id_user)
+	public function add_sale($post)
 	{
-		$query =  ORM::factory($this->table_name())->where("id_user","=",$id_user)->find();
+		$query =  ORM::factory($this->table_name());
 
-		$query->name 	  = $post['name'];
-		$query->last_name = $post['last_name'];
-		$query->email    = $post['email'];
-		if($post["password"]!="")
-			$query->password = $a1->hash($post["password"]);
+		$query->fk_client 	  = $post['fk_client'];
+		$query->date    = date('Y-m-d');
 		
 		return $query->save();		
 	}	
+
+
+	public function update_register($id_sale,$total)
+	{
+		$query =  ORM::factory($this->table_name())->where("id_sales","=",$id_sale)->find();
+
+		$query->total = $total;
+		return $query->save();
+	}
 }
